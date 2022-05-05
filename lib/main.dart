@@ -6,6 +6,7 @@ import 'PAGES/login_page.dart';
  void main() {
   runApp(MyApp());
 }
+// this is the commit of 5 tarik
 
 class MyApp  extends StatelessWidget {
    MyApp({ Key? key }) : super(key: key);
