@@ -32,9 +32,7 @@ class _LoginPageState extends State<LoginPage> {
   
   @override
   Widget build(BuildContext context) {
-    //return Scaffold(
-      //body: Center(
-       // child: Image(image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
+  
       return Material(
         color: Colors.white,
         child: SingleChildScrollView(
@@ -54,10 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                 fontWeight: FontWeight.bold,
                ),
               ),
-              // SizedBox(
-              //   height: 20.0,
-              //   child: Text("Raj is here"),
-              // ),
+             
               Padding(
                  padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
                 child: Column(
@@ -121,9 +116,6 @@ class _LoginPageState extends State<LoginPage> {
                         fontSize: 20),
                       ),
                      
-                        // shape: changeButton ? BoxShape.circle : BoxShape.rectangle,
-              
-                       
                       ),
                     ),
                 ),
