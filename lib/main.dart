@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_1/PAGES/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:test_1/utils/routes.dart';
+import 'package:test_1/widgets/themes.dart';
 import 'PAGES/login_page.dart';
 
  void main() {
@@ -17,14 +18,8 @@ class MyApp  extends StatelessWidget {
     var googleFonts = GoogleFonts;
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-      primarySwatch: Colors.deepPurple,
-      fontFamily: GoogleFonts.lato().fontFamily,
-      // primaryTextTheme: googleFonts.latoTextTheme()
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
       initialRoute: MyRoutes.homeRoute,
       routes: {
